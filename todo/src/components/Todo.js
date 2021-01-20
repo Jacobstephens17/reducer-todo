@@ -4,7 +4,7 @@ function Todo({todo, complete}) {
     return (
         <div
         onClick = {() => complete(todo.id)}
-        className = {`task ${todo.completed ? "completed" : ""}`}>
+        className = {`${todo.completed ? "completed" : ""}`}>
             <p>{todo.todo}</p>
             {` ${todo.completed ? "Task completed" : ""}`}
         </div>
